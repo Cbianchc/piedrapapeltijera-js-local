@@ -169,7 +169,8 @@ function dispararModal(resultado) {
         confirmButtonColor: '#3085d6',
         cancelButtonColor: '#d33',
         allowOutsideClick: false,
-        confirmButtonText: 'Terminé! dame otro...!'
+        confirmButtonText: 'Terminé! dame otro...!',
+        width: 700,
       }).then((result) => {
         if (result.isConfirmed) {
             resultText.innerHTML = "Hacé click en una opcion 👇";
@@ -180,34 +181,6 @@ function dispararModal(resultado) {
         }
       })
 }
-
-
-
-
-// let identificadorTiempoDeEspera;
-
-// function temporizadorDeRetraso() {
-//   identificadorTiempoDeEspera = setTimeout(dispararModal(), 3000);
-// }
-
-//     let videoID1 = ("https://www.youtube.com/embed/CIlhwMiwHV4");
-//     let videoID2 = ("https://www.youtube.com/embed/CIlhwMiwHV4");
-//     let videoID3 = ("https://www.youtube.com/embed/CIlhwMiwHV4");
-// function MostrarModal(){
-//     modal_container.classList.add('show');  
-//     videoPpt.src = videoID1;
-// }
-
-// close.addEventListener('click', () => {
-//   modal_container.classList.remove('show');
-
-// });
-
-// const reload = document.getElementById('close');
-
-// reload.addEventListener('click', _ => { // el _ es para indicar la ausencia de parametros
-//     location.reload();
-// });
 
 
 //==================================User hace click en comenzar juego
